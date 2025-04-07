@@ -1,47 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>DOM Manipulation Demo</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      padding: 20px;
-    }
-    #dynamicText {
-      color: blue;
-      margin-bottom: 10px;
-    }
-    .highlight {
-      color: red;
-      font-weight: bold;
-    }
-  </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JavaScript DOM Manipulation</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
   <header>
-    <h1 id="mainHeading">Welcome to JavaScript DOM</h1>
+    <h1 id="mainHeading">DOM Manipulation Demo</h1>
   </header>
 
-  <section>
-    <p id="dynamicText">This text will change dynamically!</p>
-    <button onclick="changeText()">Change Text</button>
-    <button onclick="toggleHighlight()">Toggle Highlight</button>
+  <section id="introSection">
+    <h2>Introduction</h2>
+    <p id="dynamicText">This is a dynamically changing text!</p>
+    <button onclick="changeText()">Change Text Content</button>
+    <button onclick="toggleHighlight()">Highlight Text</button>
   </section>
 
-  <section>
-    <button onclick="addItem()">Add Item</button>
-    <button onclick="removeItem()">Remove Item</button>
+  <section id="styleSection">
+    <h2>Style Section</h2>
+    <p>Click the button to change the background color of this section.</p>
+    <button onclick="changeBackgroundColor()">Change Background Color</button>
+  </section>
+
+  <section id="listSection">
+    <h2>Manage List Items</h2>
     <ul id="itemList">
       <li>Item 1</li>
       <li>Item 2</li>
     </ul>
+    <button onclick="addItem()">Add Item</button>
+    <button onclick="removeItem()">Remove Last Item</button>
   </section>
 
   <footer>
-    <p>&copy; 2025 DOM Tutorial</p>
+    <p>&copy; 2025 JavaScript DOM Tutorial</p>
   </footer>
 
   <script src="script.js"></script>
