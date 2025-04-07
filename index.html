@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DOM Manipulation Demo</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+    }
+    #dynamicText {
+      color: blue;
+      margin-bottom: 10px;
+    }
+    .highlight {
+      color: red;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1 id="mainHeading">Welcome to JavaScript DOM</h1>
+  </header>
+
+  <section>
+    <p id="dynamicText">This text will change dynamically!</p>
+    <button onclick="changeText()">Change Text</button>
+    <button onclick="toggleHighlight()">Toggle Highlight</button>
+  </section>
+
+  <section>
+    <button onclick="addItem()">Add Item</button>
+    <button onclick="removeItem()">Remove Item</button>
+    <ul id="itemList">
+      <li>Item 1</li>
+      <li>Item 2</li>
+    </ul>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 DOM Tutorial</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
